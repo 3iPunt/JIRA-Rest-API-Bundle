@@ -1,5 +1,5 @@
 {
-    "name": "bluetea/jira-rest-api-bundle",
+    "name": "3ipunt/jira-rest-api-bundle",
     "description": "Atlassian JIRA REST API Symfony2 Bundle",
     "keywords": ["atlassian","jira","api","symfony2"],
     "type": "symfony-bundle",

@@ -9,7 +9,7 @@ This bundle adds configuration and initializes the endpoints with dependency inj
 Add this bundle to your composer.json
 
 ```
-composer.phar require "bluetea/jira-rest-api-bundle" dev-master
+composer.phar require "3ipunt/jira-rest-api-bundle" dev-master
 ```
 
 Enable it in the AppKernel.php
