@@ -65,9 +65,10 @@ class EndpointCompilerPass implements CompilerPassInterface
         if ($authentication['type'] == 'basic') {
             // Create an authentication service
             $authenticationDefinition = new Definition(
-                'Bluetea\Api\Authentication\BasicAuthentication',
-                array('username' => $authentication['username'], 'password' => $authentication['password'])
+                'Bluetea\Api\Authentication\BasicAuthentication'
             );
+            $authenticationDefinition->addMethodCall('setUsername', array($authentication['username']));
+            $authenticationDefinition->addMethodCall('setPassword', array($authentication['password']));
         } elseif ($authentication['type'] == 'anonymous') {
             // Create an authentication service
             $authenticationDefinition = new Definition(
